@@ -12,7 +12,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "github",
+        name: "username",
         message: "Enter your Github username?"
     },
     {
@@ -68,10 +68,26 @@ const questions = [
       
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+    fs.writeFile('./README.md', data, function(err) {
+        if (err) {
+         throw err;
+        }
+        console.log('File created');
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then(answers => {
+        console.log(answers)
+       let markdown = generateMarkdown(answers);
+       console.log(markdown)
+        writeToFile('./README.md',markdown);
+    })
+}
 
 // Function call to initialize app
 init();
