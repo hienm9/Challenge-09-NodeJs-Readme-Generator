@@ -39,8 +39,17 @@ ${data.description}
 
 ## Github URL
 
-[${data.github}](https://github.com/${data.github}/)
+https://github.com/${data.github}/
 
+## Table of Contents
+
+* [Installation](#dependencies)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Credits](#contributors)
 
 
 

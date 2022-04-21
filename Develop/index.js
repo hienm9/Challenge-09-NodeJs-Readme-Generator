@@ -7,8 +7,8 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
-        name: "name",
-        message: "What's your name?"
+        name: "title",
+        message: "What's the name of your project?"
     },
     {
         type: "input",
@@ -24,11 +24,6 @@ const questions = [
         type: "input",
         name: "email",
         message: "What's your email?"
-    },
-    {
-        type: "input",
-        name: "title",
-        message: "What's the name of your project?"
     },
     {
         type: "input",
@@ -67,7 +62,7 @@ const questions = [
 ];
       
 
-// TODO: Create a function to write README file
+//Create a function to write README file
 function writeToFile(fileName, data) {
 
     fs.writeFile('./README.md', data, function(err) {
@@ -78,7 +73,7 @@ function writeToFile(fileName, data) {
     })
 }
 
-// TODO: Create a function to initialize app
+//Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
