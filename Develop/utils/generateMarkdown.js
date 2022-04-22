@@ -14,7 +14,9 @@ function renderLicenseLink(license) {
   if (license == "None"){
     return 
   }else{
-
+  return (
+    `\n* [License](#license)\n`
+  )
   }
 }
 
@@ -24,8 +26,10 @@ function renderLicenseSection(license) {
   if (license == "None"){
     return "" 
   }else{
-    return `## License 
-${license}`
+    return `## License 🪪
+Copyright © ${license}. All rights reserved.
+Licensed under the ${license} license.`
+
   }
 }
 
