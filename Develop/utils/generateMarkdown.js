@@ -28,6 +28,7 @@ function renderLicenseSection(license) {
   }else{
     return `## License 🪪
 Copyright © ${license}. All rights reserved.
+
 Licensed under the ${license} license.`
   }
 }
@@ -36,13 +37,16 @@ Licensed under the ${license} license.`
 function generateMarkdown(data) {
 return `# ${data.title} 
 
-## Description 🏆
+## Description 
 
 ${data.description} 
+
 
 ## Github URL
 
 https://github.com/${data.github}/
+
+
 
 ## Table of Contents 📋
 
@@ -57,7 +61,8 @@ https://github.com/${data.github}/
 * [Test](#test)
 
 
-## [Installation](#dependencies)
+
+## Installation
 
 Run the following commands to install dependencies:
 
@@ -65,12 +70,14 @@ Run the following commands to install dependencies:
 ${data.dependencies}
 \`\`\`
 
+
 ## Usage 
 
 ${data.usage}
-${renderLicenseSection(data.license)}
 
-## Contributors 👏🏻
+
+
+## Contributors 
 
 ${data.contributors}
 

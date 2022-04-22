@@ -65,7 +65,7 @@ const questions = [
 //Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile('./README.md', data, function(err) {
+    fs.writeFile('./distribution/README.md', data, function(err) {
         if (err) {
          throw err;
         }
@@ -80,7 +80,8 @@ function init() {
         console.log(answers)
        let markdown = generateMarkdown(answers);
        console.log(markdown)
-        writeToFile('./README.md',markdown);
+        writeToFile('./distribution/README.md',markdown);
+        
     })
 }
 
