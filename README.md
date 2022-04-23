@@ -9,11 +9,12 @@
 A simple Node.js tool where user can use to generate a readme file for their projects in Github.
 
 ## Screenshots
-https://github.com/hienm9/Readme-Generator/blob/163951029076665061f6d8553736dda6b245b215/Develop/assets/images/questions-from-cmd.png
 
-https://github.com/hienm9/Readme-Generator/blob/163951029076665061f6d8553736dda6b245b215/Develop/assets/images/questions-from-cmd.png
+![](https://github.com/hienm9/Readme-Generator/blob/163951029076665061f6d8553736dda6b245b215/Develop/assets/images/questions-from-cmd.png)
 
-https://github.com/hienm9/Readme-Generator/blob/163951029076665061f6d8553736dda6b245b215/Develop/assets/images/questions-from-cmd.png
+![](https://github.com/hienm9/Readme-Generator/blob/163951029076665061f6d8553736dda6b245b215/Develop/assets/images/questions-from-cmd.png)
+
+![](https://github.com/hienm9/Readme-Generator/blob/163951029076665061f6d8553736dda6b245b215/Develop/assets/images/questions-from-cmd.png)
 
 
 ## User Story
