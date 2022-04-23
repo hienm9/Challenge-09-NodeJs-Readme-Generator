@@ -44,14 +44,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "test",
-        message: "What commands do I need to run for the test?",
-        default: "npm test"
-    },
-    {
-        type: "input",
         name: "usage",
-        message: "What does the usage of this repo?",
+        message: "What are the usages of this repo?",
     },
     {
         type: "input",
@@ -69,7 +63,7 @@ function writeToFile(fileName, data) {
         if (err) {
          throw err;
         }
-        console.log('File created');
+        console.log('File created successfully!');
     })
 }
 

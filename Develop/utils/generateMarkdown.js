@@ -54,7 +54,7 @@ https://github.com/${data.github}/
 
 * [Usage](#usage)
 
-* [License](#license)${renderLicenseLink(data.license)}
+${renderLicenseLink(data.license)}
 
 * [Credits](#contributors)
 
@@ -81,6 +81,10 @@ ${data.usage}
 
 ${data.contributors}
 
+Contact me at: ${data.email}
+
+
+${renderLicenseSection(data.license)}
 `;
 }
 
