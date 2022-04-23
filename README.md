@@ -9,11 +9,11 @@
 A simple Node.js tool where user can use to generate a readme file for their projects in Github.
 
 ## Screenshots
-![](assets/images/questions-from-cmd.png)
+![](./Develop/assets/images/questions-from-cmd.pngassets/images/questions-from-cmd.png)
 
-![](assets/images/Readme-file.png)
+![](./Develop/assets/images/Readme-file.pngassets/images/Readme-file.png)
 
-![](assets/images/Readme-Preview.png)
+![](./Develop/assets/images/Readme-Preview.pngassets/images/Readme-Preview.png)
 
 
 ## User Story
