@@ -12,13 +12,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "username",
-        message: "Enter your Github username?"
-    },
-    {
-        type: "input",
         name: "github",
-        message: "Enter GitHub link to your project?"
+        message: "Enter GitHub link to your project"
     },
     {
         type: "input",
@@ -28,7 +23,7 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Provide a description of your project:"
+        message: "Provide a description of your project: "
     },
     {
         type: "list",
@@ -45,7 +40,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "What are the usages of this repo?",
+        message: "What does the usage of this repo?",
     },
     {
         type: "input",
@@ -55,26 +50,27 @@ const questions = [
 
 ];
       
-
+let path = './distribution/README.md';
 //Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile('./distribution/README.md', data, function(err) {
+    fs.writeFile(path, data, function(err) {
         if (err) {
          throw err;
         }
-        console.log('File created successfully!');
+        console.log('File created successfully! in ' + path);
     })
 }
 
 //Create a function to initialize app
 function init() {
+    // let path = './distribution/README.md';
     inquirer.prompt(questions)
     .then(answers => {
         console.log(answers)
        let markdown = generateMarkdown(answers);
        console.log(markdown)
-        writeToFile('./distribution/README.md',markdown);
+        writeToFile(path,markdown);
         
     })
 }

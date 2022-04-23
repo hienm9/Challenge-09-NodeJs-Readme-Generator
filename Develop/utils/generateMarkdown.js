@@ -44,7 +44,7 @@ ${data.description}
 
 ## Github URL
 
-https://github.com/${data.github}/
+${data.github}
 
 
 
@@ -57,8 +57,6 @@ https://github.com/${data.github}/
 ${renderLicenseLink(data.license)}
 
 * [Credits](#contributors)
-
-* [Test](#test)
 
 
 

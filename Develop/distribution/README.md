@@ -1,13 +1,13 @@
-# test 
+# README GENERATOR 
 
 ## Description 
 
-ste 
+This is a command-line application that dynamically generates a professiona readme file from a user's input , using npm js Inquirer package. 
 
 
 ## Github URL
 
-https://github.com/test/
+https://github.com/hienm9/Readme-Generator
 
 
 
@@ -23,8 +23,6 @@ https://github.com/test/
 
 * [Credits](#contributors)
 
-* [Test](#test)
-
 
 
 ## Installation
@@ -38,13 +36,15 @@ npm i
 
 ## Usage 
 
-test
+When user runs this application, it will prompt questions and takes in user's input, when done, it generates a readme file with tthe information entered.
 
 
 
 ## Contributors 
 
-test
+hien
+
+Contact me at: hienm9@gmail.com
 
 
 ## License 🪪
